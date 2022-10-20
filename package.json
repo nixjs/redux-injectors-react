@@ -1,13 +1,19 @@
 {
-  "name": "redux-injectors",
-  "version": "2.0.0",
+  "name": "@nixjs23n6/redux-injectors",
+  "version": "2.0.2",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "index.d.ts",
-  "repository": "git@github.com:react-boilerplate/redux-injectors.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nixjs/redux-injectors-react"
+  },
   "author": "react-boilerplate",
   "license": "MIT",
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "bili --format cjs --format esm",
     "build:docs": "documentation build -f md -o docs/api.md --markdown-toc ./src/index.js --access=public --config documentation.yml",
@@ -57,9 +63,9 @@
     "regenerator-runtime": "0.13.5"
   },
   "peerDependencies": {
-    "react": "^16.6.0 || ^17.0.0",
-    "react-dom": "^16.6.0 || ^17.0.0",
-    "react-redux": "^7.1.0"
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-redux": ">=7"
   },
   "dependencies": {
     "hoist-non-react-statics": "^3.3.2",
